@@ -72,6 +72,39 @@ Meta Data for this object
 
 and here is the resulting JSON string. As I said, this will have to be changed to fit into metametrik. Also, there are many packages that write R to JSON, so the one I'm using may not be the best one.
 
-```r
-[1] "{\"dataset\":\"Annette Dobson (1990) An Introduction to Generalized Linear Models. Page 9: Plant Weight Data.\",\"modeltype\":\"lm\",\"depvar\":\"plant weight measured in grams\",\"expvars\":{\"varname\":[\"Intercept\",\"treatment\"],\"metadata\":[\"Intercept\",\"group indicator of whether treated with substance XYZ\"],\"value\":{\"(Intercept)\":5.032,\"groupTrt\":-0.371},\"se\":{\"(Intercept)\":0.220217695322908,\"groupTrt\":0.311434851400203}},\"gof\":{\"gname\":[\"R$^2$\",\"Adj. R$^2$\",\"Num. obs.\"],\"gval\":[0.0730775989903856,0.021581910045407,20]}}"
-```
+ {
+   "depvar": "plant weight measured in grams", 
+   "expvars": {
+     "varname": [
+       "Intercept", 
+       "treatment"
+     ], 
+     "se": {
+       "groupTrt": 0.311434851400203, 
+       "(Intercept)": 0.220217695322908
+     }, 
+     "value": {
+       "groupTrt": -0.371, 
+       "(Intercept)": 5.032
+     }, 
+     "metadata": [
+       "Intercept", 
+       "group indicator of whether treated with substance XYZ"
+     ]
+   }, 
+   "gof": {
+     "gval": [
+       0.0730775989903856, 
+       0.021581910045407, 
+       20
+     ], 
+     "gname": [
+       "R$^2$", 
+       "Adj. R$^2$", 
+       "Num. obs."
+     ]
+   }, 
+   "modeltype": "lm", 
+   "dataset": "Annette Dobson (1990) An Introduction to Generalized Linear Models. Page 9: Plant Weight Data."
+ }
+
