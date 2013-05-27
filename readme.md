@@ -72,6 +72,7 @@ Meta Data for this object
 
 and here is the resulting JSON string. As I said, this will have to be changed to fit into metametrik. Also, there are many packages that write R to JSON, so the one I'm using may not be the best one.
 
+```javascript
  {
    "depvar": "plant weight measured in grams", 
    "expvars": {
@@ -107,4 +108,4 @@ and here is the resulting JSON string. As I said, this will have to be changed t
    "modeltype": "lm", 
    "dataset": "Annette Dobson (1990) An Introduction to Generalized Linear Models. Page 9: Plant Weight Data."
  }
-
+```
