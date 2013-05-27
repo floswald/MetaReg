@@ -786,6 +786,7 @@ htmlreg <- function(l, file = NA, single.row = FALSE,
 
 
 # uses roxygen documentation
+# output of this is motivated by the package rjson ( can only output lists). maybe http://cran.r-project.org/web/packages/df2json/ would be better?
 
 #' JSONreg function
 #' 
